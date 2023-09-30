@@ -1,7 +1,5 @@
 package ru.geekbrains.lesson1;
 
-import ru.geekbrains.lesson1.sample.Juice;
-
 import java.util.ArrayList;
 
 public class Program {
@@ -68,4 +66,17 @@ public class Program {
 
     }
 
+    public static class Juice extends BottleOfWater {
+        private String typeJuice;
+
+        public String getTypeOfJuice(){
+            return typeJuice;
+        }
+        public Juice(String brand, String name, double price, int volume, String typeJuice){
+            super(brand, name, price,volume);
+            this.typeJuice = typeJuice;
+        }
+
+
+    }
 }

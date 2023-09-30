@@ -1,7 +1,5 @@
 package ru.geekbrains.lesson1;
 
-import ru.geekbrains.lesson1.sample.Juice;
-
 import java.util.List;
 
 public class VendingMachine {
@@ -22,10 +20,10 @@ public class VendingMachine {
         return null;
     }
 
-    public Juice getJuicePack(String name, String typeJuice) {
+    public Program.Juice getJuicePack(String name, String typeJuice) {
         for (Product product : products){
-            if (product instanceof Juice){
-                Juice newJuicePack = (Juice)product;
+            if (product instanceof Program.Juice){
+                Program.Juice newJuicePack = (Program.Juice)product;
                 if (newJuicePack.getName().equals(name) && newJuicePack.getTypeOfJuice() == typeJuice)
                     return newJuicePack;
             }
